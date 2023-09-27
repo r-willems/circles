@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module"></script>
+</head>
+<body>
+    <h1>Collision detection</h1>
+    <style>
+        canvas {border: solid 3px black;}
+        #scriptBlock{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #inputBlock{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        .blockItem{
+            padding: 5px;
+            display: block;
+        }
+
+    </style>
+    <div id="scriptBlock">
+        <canvas id="canvas"></canvas>
+        <div id="inputBlock">
+            <p id="speedDisplay" class="blockItem">Speed is 1</p>
+            <input id="speedSlider" class="blockItem" type="range" step=".5" value="1">
+        </div>
+    </div>
+
+
+</body>
+</html>
